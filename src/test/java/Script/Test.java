@@ -60,7 +60,7 @@ public void SetUp()  {
 
 public void Launched(){
 	
-	 
+	 Driver.label("LAUNCHEDD");
 	
 	System.out.print("Launch");
 	
