@@ -103,7 +103,21 @@ public class login {
 		
 	}
 	
-	public void LoginUsingValidCred(String Text) throws InterruptedException {
+	public void LoginUsingValidCred() throws InterruptedException {
+		
+		Excel E = new Excel(Driver);
+		String	Terminalid = "PP-1";
+		String	password = "12345";
+			
+			G = new Generic(Driver);
+			G.SendKeys(TerminalID, Terminalid);
+			G.SendKeys(Password, password);
+			WebElement submit = Driver.findElement(LoginButton);
+			Wait(submit);
+			submit.click();
+		
+		
+		
 		
 		
 	}
