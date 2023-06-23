@@ -73,7 +73,7 @@ public void TC_1() throws IOException, InterruptedException{
 	
 	 Driver.label("TC_1");
 	login L = new login(Driver);
-	L.TC_1();
+	L.LoginUsingInValidCred();
 	
 	
 }

@@ -109,6 +109,39 @@ public class login {
 		
 	}
 	
+	public void LoginUsingValidCred(String Text) throws InterruptedException {
+		
+		
+	}
+	
+	public void LoginUsingInValidCred() throws InterruptedException {
+		
+		String	Terminalid = "PP-1";
+			
+			G = new Generic(Driver);
+			G.SendKeys(TerminalID, Terminalid);
+			G.SendKeys(Password, "12345");
+			WebElement submit = Driver.findElement(LoginButton);
+			Wait(submit);
+			submit.click();
+			
+			//ASSERT TOAST
+			Thread.sleep(3000);
+			WebElement ErrorMessage = Driver.findElement(TerminalNotFoundError);
+			Wait(ErrorMessage);
+			String ErrorText = ErrorMessage.getText();
+			System.out.println(ErrorText);
+			Assert.assertEquals(ErrorText , "Terminal app not found");
+			
+			
+			ErrorMessage.click();
+			
+		
+	}
+	
+	
+	
+	
 	
 //___________________________________________ TC_1_____________________________________________________________________________________________________
 	
