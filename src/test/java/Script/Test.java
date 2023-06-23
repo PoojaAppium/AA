@@ -42,7 +42,6 @@ public void SetUp()  {
 			DC.setCapability("noSign", true);
 			DC.setCapability("newCommandTimeout", 1000);
 			DC.setCapability("autoGrantPermissions",true);
-			DC.setCapability(MobileCapabilityType.FULL_RESET,true);
 			URL url = new URL("http://127.0.0.1:4723/wd/hub");
 			Driver = Factory.createAndroidDriver(url, DC);
 			Driver.manage().timeouts().implicitlyWait(30 , TimeUnit.SECONDS); 
