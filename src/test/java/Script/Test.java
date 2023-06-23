@@ -1,5 +1,6 @@
 package Script;
 
+import java.io.IOException;
 import java.net.URL;
 
 import java.util.concurrent.TimeUnit;
@@ -10,6 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import com.microsoft.appcenter.appium.EnhancedAndroidDriver;
 import com.microsoft.appcenter.appium.Factory;
 
+import POM_A.login;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
@@ -58,11 +60,17 @@ public void SetUp()  {
 @org.junit.Test
 
 
-public void Launched(){
+public void Launched() throws IOException, InterruptedException{
 	
 	 Driver.label("LAUNCHEDD");
 	
 	System.out.print("Launch");
+	
+	login L = new login(Driver);
+	L.TC_1();
+	L.TC_2();
+	L.TC_3();
+	L.TC_4();
 	
 }
 
