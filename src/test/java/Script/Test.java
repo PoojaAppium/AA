@@ -57,7 +57,7 @@ public void SetUp()  {
 	
 	
 	
-@org.junit.Test
+@org.junit.Test()
 
 
 public void Launched() throws IOException, InterruptedException{
@@ -68,6 +68,8 @@ public void Launched() throws IOException, InterruptedException{
 	
 }
 
+@org.junit.Test
+
 public void TC_1() throws IOException, InterruptedException{
 	
 	 Driver.label("TC_1");
@@ -76,6 +78,8 @@ public void TC_1() throws IOException, InterruptedException{
 	
 	
 }
+
+@org.junit.Test
 
 public void TC_2() throws IOException, InterruptedException{
 	
@@ -86,6 +90,8 @@ public void TC_2() throws IOException, InterruptedException{
 	
 }
 
+@org.junit.Test
+
 public void TC_3() throws IOException, InterruptedException{
 	
 	 Driver.label("TC_3");
@@ -94,6 +100,8 @@ public void TC_3() throws IOException, InterruptedException{
 	
 	
 }
+
+@org.junit.Test
 
 public void TC_4() throws IOException, InterruptedException{
 	
