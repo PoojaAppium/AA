@@ -110,11 +110,16 @@ public class login {
 		String	password = "12345";
 			
 			G = new Generic(Driver);
+			
+			 Driver.label("FILLED VALID TERMINAL ID");
 			G.SendKeys(TerminalID, Terminalid);
+			 Driver.label("FILLED VALID PASSWORD");
 			G.SendKeys(Password, password);
+			 Driver.label("CLICK ON SUBMIT");
 			WebElement submit = Driver.findElement(LoginButton);
 			Wait(submit);
 			submit.click();
+			 Driver.label("DASHBOARD OPEN");
 		
 		
 		
