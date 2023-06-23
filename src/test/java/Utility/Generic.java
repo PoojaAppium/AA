@@ -31,6 +31,8 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class Generic {
 
+	
+	
 	EnhancedAndroidDriver<MobileElement> Driver ;
 		
 		public Generic(EnhancedAndroidDriver<MobileElement> Driver) {
