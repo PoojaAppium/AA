@@ -1,6 +1,7 @@
 package Script;
 
 import java.net.URL;
+
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Before;
@@ -12,11 +13,15 @@ import com.microsoft.appcenter.appium.Factory;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
+import org.junit.rules.TestWatcher;
+import org.junit.Rule;
+
 public class Test {
 	
 	 private static EnhancedAndroidDriver<MobileElement> Driver;
 
-	 
+	 @Rule
+	    public TestWatcher watcher = Factory.createWatcher();
 	 
 	 
 	@Before
@@ -54,6 +59,8 @@ public void SetUp()  {
 
 
 public void Launched(){
+	
+	 
 	
 	System.out.print("Launch");
 	
