@@ -17,12 +17,6 @@ import io.appium.java_client.MobileElement;
 public class login {
 	
 	
-	
-	
-	
-	
-	
-	
 	EnhancedAndroidDriver<MobileElement> Driver ;
 	 Generic G;
 	 
@@ -35,9 +29,9 @@ public class login {
 	By TerminalID = By.xpath("(//android.widget.EditText[@index='3'])[1]");
 	By Password = By.xpath("(//android.widget.EditText[@index='4'])[1]");
 	By LoginButton = By.xpath("(//android.view.ViewGroup[@index='5'])[1]");
-	By WrongCredErrorMessage = By.xpath("//android.widget.TextView[@bounds='[309,1154][772,1207]']");
-	By TerminalNotFoundError = By.xpath("//android.widget.TextView[@bounds='[338,1154][743,1207]']");
-	By PleaseEnterTerminalAndPassword = By.xpath("//android.widget.TextView[@bounds='[176,1131][904,1230]']");
+	By WrongCredErrorMessage = By.xpath("//android.widget.TextView[@index='0']");
+	By TerminalNotFoundError = By.xpath("//android.widget.TextView[@index='0']");
+	By PleaseEnterTerminalAndPassword = By.xpath("//android.widget.TextView[@index='0']");
 	By ForgotPasswordButton = By.xpath("//android.widget.TextView[@index='4']");
 	
 	
@@ -116,7 +110,7 @@ public class login {
 	
 	public void LoginUsingInValidCred() throws InterruptedException {
 		
-		String	Terminalid = "PP-1";
+		String	Terminalid = "RERE-1";
 			
 			G = new Generic(Driver);
 			G.SendKeys(TerminalID, Terminalid);

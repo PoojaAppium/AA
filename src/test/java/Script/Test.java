@@ -78,16 +78,16 @@ public void TC_1() throws IOException, InterruptedException{
 	
 }
 
-//@org.junit.Test
-//
-//public void TC_2() throws IOException, InterruptedException{
-//	
-//	 Driver.label("TC_2");
-//	login L = new login(Driver);
-//	L.TC_2();
-//	
-//	
-//}
+@org.junit.Test
+
+public void TC_2() throws IOException, InterruptedException{
+	
+	 Driver.label("TC_2");
+	login L = new login(Driver);
+	L.TC_2();
+	
+	
+}
 //
 //@org.junit.Test
 //
