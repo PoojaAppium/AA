@@ -88,32 +88,32 @@ public void TC_2() throws IOException, InterruptedException{
 	
 	
 }
-//
-//@org.junit.Test
-//
-//public void TC_3() throws IOException, InterruptedException{
-//	
-//	 Driver.label("TC_3");
-//	login L = new login(Driver);
-//	L.TC_3();
-//	
-//	
-//}
-//
-//@org.junit.Test
-//
-//public void TC_4() throws IOException, InterruptedException{
-//	
-//	 Driver.label("TC_4");
-//	login L = new login(Driver);
-//	L.TC_4();
-//	
-//	
-//}
 
 
+
+@org.junit.Test
+
+public void TC_3() throws IOException, InterruptedException{
+	
+	 Driver.label("TC_3");
+	login L = new login(Driver);
+	L.TC_3();
 	
 	
+}
+
+@org.junit.Test
+
+public void TC_4() throws IOException, InterruptedException{
+	
+	 Driver.label("TC_4");
+	login L = new login(Driver);
+	L.TC_4();
+	
+	
+}
+
+
 	
 	
 	

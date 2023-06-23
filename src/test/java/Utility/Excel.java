@@ -29,12 +29,12 @@ public class Excel {
 		   }
 	public void WriteInExcel(int Row , int Cell , String CellValue) throws IOException {
 
-	    FileInputStream fis = new FileInputStream("./TestData/TestData.xlsx");
+	    FileInputStream fis = new FileInputStream("\"C:\\Users\\dell\\git\\A1\\AA\\TestData\\TestData.xlsx\"");
 	     XSSFWorkbook wb = new XSSFWorkbook(fis);
         XSSFSheet sheet = wb.getSheet("Sheet1");
      //   sheet.getRow(Row).createCell(Cell).setBlank();
         sheet.getRow(Row).createCell(Cell).setCellValue(CellValue);
-		FileOutputStream fos = new FileOutputStream("./TestData/TestData.xlsx");
+		FileOutputStream fos = new FileOutputStream("\"C:\\Users\\dell\\git\\A1\\AA\\TestData\\TestData.xlsx\"");
 		wb.write(fos);
 	    wb.close();
 	}
@@ -43,7 +43,7 @@ public class Excel {
 
 	public String ReadFromExcel(int Row , int Cell) throws IOException {
 		
-		FileInputStream ExcelFile = new FileInputStream("./TestData/TestData.xlsx");
+		FileInputStream ExcelFile = new FileInputStream("\"C:\\Users\\dell\\git\\A1\\AA\\TestData\\TestData.xlsx\"");
      // Access the required test data sheet
 		XSSFWorkbook ExcelWBook = new XSSFWorkbook(ExcelFile);
 		XSSFSheet   ExcelWSheet = ExcelWBook.getSheet("Sheet1");  
