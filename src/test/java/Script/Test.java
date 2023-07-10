@@ -31,13 +31,24 @@ public void SetUp()  {
 		
 		try{		
 			DesiredCapabilities DC = new DesiredCapabilities();
+//			DC.setCapability("PlatformVersion", "12");
+//			DC.setCapability("deviceName", "vivo X70 Pro");
+//			DC.setCapability("UDID", "1361177652000IA");
+//			DC.setCapability("platformName", "Android");
+//			DC.setCapability("appActivity", "com.combitime.MainActivity");
+//			DC.setCapability("appPackage", "com.combitime.test");
+//			DC.setCapability("automationName", "UiAutomator2");
+			
 			DC.setCapability("PlatformVersion", "12");
-			DC.setCapability("deviceName", "vivo X70 Pro");
-			DC.setCapability("UDID", "1361177652000IA");
+			DC.setCapability("deviceName", "emulator-5554");
+			DC.setCapability("app", "C:/Users/pooja/Downloads/APK/app-dev-release.apk");
 			DC.setCapability("platformName", "Android");
-			DC.setCapability("appActivity", "com.combitime.MainActivity");
-			DC.setCapability("appPackage", "com.combitime.test");
+			DC.setCapability("isHeadless", true); 
+			DC.setCapability("avdArgs", "-no-window");
 			DC.setCapability("automationName", "UiAutomator2");
+			
+			
+			
 			DC.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
 			DC.setCapability("noSign", true);
 			DC.setCapability("newCommandTimeout", 1000);
